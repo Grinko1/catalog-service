@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ProductService {
-    public List<Product> findAllProducts();
+    public Iterable<Product> findAllProducts(String filter);
     public Product save(String title, String details);
 
    public Optional<Product> findProductById(int productId);
